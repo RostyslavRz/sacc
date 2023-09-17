@@ -33,3 +33,15 @@ $contentsizeMap: (
         grid-template-columns: 1fr;
     }
 }
+
+.footer__block {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    @media all and (width < var.screen('laptop')) {
+        flex-wrap: wrap;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}

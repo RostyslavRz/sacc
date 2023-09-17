@@ -39,4 +39,17 @@
   }
 }
 
+.footer__block {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+@media all and (width < 1260px) {
+  .footer__block {
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
 /*# sourceMappingURL=service.css.map */

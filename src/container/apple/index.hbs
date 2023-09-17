@@ -24,6 +24,21 @@
     {{/with}}
   </div>
 
+  <div class="header-ad">
+    {{#with header}}
+    <header class="header__content">
+      {{#with ad}}
+      <div class="header__block">{{title}}</div>
+      <div class="header__block">
+        {{#with link}}
+        <a href="{{url}}" class="product__link header__icon">{{text}}</a>
+        {{/with}}
+      </div>
+      {{/with}}
+    </header>
+    {{/with}}
+  </div>
+
   {{#with iphone_pro}}
   <section class="product product-big product--iphone_pro product--dark product--top">
     <div class="product__content">
@@ -143,7 +158,7 @@
   <div class="section__double">
     <div>
       {{#with gift}}
-      <section class="product product-small product-gift product--light product--top">
+      <section class="product product-small product--gift product--light product--top">
         <div class="product__content">
           <h1 class="product__title">{{title}}</h1>
           <p class="product__description">{{descriptions}}</p>
@@ -171,6 +186,19 @@
         </div>
       </section>
       {{/with}}
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer__block section__content">
+      {{#each footer}}
+      <div class="footer__links">
+        <p class="footer-title">{{title}}</p>
+        {{#each links}}
+        <a href="{{url}}" class="footer-link">{{text}}</a>
+        {{/each}}
+      </div>
+      {{/each}}
     </div>
   </div>
 </div>
